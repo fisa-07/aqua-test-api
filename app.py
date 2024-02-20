@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 app = Flask(__name__)
 
 #Loading the dataset
-df = pd.read_csv('D:\\Python Code\\train1.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/fisa-07/aqua-test-api/main/train1.csv')
 
 x_train, x_test, y_train, y_test = train_test_split(df.drop('CLASS', axis=1), df['CLASS'], test_size=0.2, random_state=42)
 

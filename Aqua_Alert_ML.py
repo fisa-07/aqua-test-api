@@ -37,5 +37,5 @@ def ml_model():
     class_name = {"result":f"{dict[rfc_pred]}"}
     return jsonify(class_name)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
